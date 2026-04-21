@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-image: url("Netflix background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    
+}
+
+#nav{text-align:right;
+    margin-top:-140px;
+    margin-right:20px ;}
+
+select{
+    border-radius: 20%;
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid white;
+}
+
+option{
+    color:black;
+}
+
+.sign{background-color:white;
+            width:80px;
+            height:30px;
+            border: none;
+            border-radius: 20%;
+                }
+
+.sign:hover{
+background-color:red;}
+
+
+
+#text{text-align: center;
+    margin-top: 130px;}
+
+p{
+color:white;}
+
+h3{
+color:white;
+font-size:50px;
+}
+
+h5{
+color:white;
+font-size:20px;}
+
+label{margin:230px}
+
+#email{height:50px;
+        width:300px;
+        color:white;
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius:9px ;}
+
+button{height:50px;
+        width:120px;
+        border-radius:9px
+}
+
+button:hover{background-color:red;}
+ 
