@@ -1,0 +1,90 @@
+# JavaScript & Bootstrap Projects
+
+This repository contains my web development practice projects created using **HTML, CSS, JavaScript, and Bootstrap**. The projects helped me improve my frontend development skills and understand how to create interactive, responsive, and user-friendly websites.
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Bootstrap 5
+* DOM Manipulation
+* Responsive Web Design
+
+## JavaScript Topics Covered
+
+* Variables and Data Types
+* Operators
+* Conditional Statements
+* Loops
+* Functions
+* Arrays
+* Objects
+* String Methods
+* Array Methods
+* Switch Statements
+* User Input
+* DOM Manipulation
+* Events
+* Form Validation
+
+## Bootstrap Topics Covered
+
+* Bootstrap Grid System
+* Containers and Rows
+* Responsive Columns
+* Buttons
+* Cards
+* Forms
+* Navbar
+* Alerts
+* Tables
+* Modals
+* Badges
+* Responsive Design
+* Utility Classes
+
+## Projects
+
+### 1. Calculator
+
+A basic calculator developed using JavaScript that performs arithmetic operations such as addition, subtraction, multiplication, and division.
+
+### 2. Even and Odd Checker
+
+A JavaScript program that takes a number from the user and determines whether it is even or odd.
+
+### 3. Quiz Game
+
+An interactive quiz application created using JavaScript. It allows users to answer questions and displays the result.
+
+### 4. Student Search
+
+A JavaScript project that searches student information using a student ID and displays the corresponding details.
+
+### 5. Form Validation
+
+A form validation project that checks user input and displays appropriate validation messages.
+
+### 6. Responsive Bootstrap Website
+
+A responsive website created using Bootstrap components such as navbar, cards, buttons, forms, and the Bootstrap grid system.
+
+## Features
+
+* Responsive design
+* Interactive user interface
+* JavaScript-based functionality
+* Bootstrap responsive components
+* Clean and beginner-friendly code
+* Mobile-friendly layouts
+
+## Purpose
+
+The purpose of this repository is to practice **JavaScript and Bootstrap** and improve my frontend development, logical thinking, DOM manipulation, and responsive web design skills.
+
+## Author
+
+**Sonu Sharma**
+
+Aspiring Full Stack Java Developer
