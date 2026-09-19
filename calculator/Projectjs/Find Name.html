@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Name Storage & Search</title>
+
+    <link rel="stylesheet" href="./findname.style">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.container > h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+}
+
+button {
+    padding: 12px 18px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #667eea;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4f5fd1;
+}
+
+.clear-btn {
+    background-color: #dc3545;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.clear-btn:hover {
+    background-color: #b52a37;
+}
+
+#list {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    word-break: break-word;
+}
+
+#heading {
+    color: green;
+    margin-top: 20px;
+}
+
+#heading1 {
+    color: red;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Name Storage & Search</h1>
+
+       
+        <div class="card">
+
+            <h2>Add Name</h2>
+
+            <input
+                type="text"
+                id="takeinput"
+                placeholder="Enter name"
+            >
+
+            <button onclick="multiple()">Add Name</button>
+
+        </div>
+<div class="card">
+
+            <h2>Stored Names</h2>
+
+            <p id="list">No names stored yet.</p>
+
+            <button class="clear-btn" onclick="clearNames()">
+                Clear All
+            </button>
+
+        </div>
+
+
+        <!-- Search Name -->
+        <div class="card">
+
+            <h2>Search Name</h2>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter name to search"
+            >
+
+            <button onclick="enter()">Search</button>
+
+            <h3 id="heading"></h3>
+            <h3 id="heading1"></h3>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

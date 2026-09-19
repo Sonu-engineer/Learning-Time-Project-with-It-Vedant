@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and Odd</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Main Heading */
+h1 {
+    color: #222;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 8px auto;
+    max-width: 700px;
+}
+
+/* Input Box */
+#numberInput {
+    width: 300px;
+    padding: 15px;
+    margin-top: 25px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Input Focus */
+#numberInput:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Button */
+button {
+    padding: 15px 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Result Paragraph */
+body > p:last-child {
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #numberInput {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Even and Odd Checker</h1>
+    <p>If you want to check whether a number is even or odd, you can use the following simple method:</p>
+    <p>1. Take the number you want to check.</p>
+    <p>2. Divide the number by 2.</p>
+    <p>3. If the remainder is 0, the number is even. If
+    <p>the remainder is 1, the number is odd.</p>
+    
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkEvenOdd()">Check</button>
+    <script>
+        // function checkEvenOdd() {
+        //     const number = document.getElementById('numberInput').value;
+        //     if (number % 1 !== 0 && number % 1 !== 0) {
+        //         let word=document.createElement('p');
+        //         word = document.body.innerText.toLowerCase();
+        //         word.body.innerText=" this  odd number is not valid this  is  odd number";
+        //         word.body.style.color = "red";
+        //         word.appendChild(document.createElement('br'));
+        //         alert('Please enter a number.');
+        //         document.body.appendChild(word);
+
+        //         return;
+        //     }
+        //     const result = (number % 2 === 0) ? 'even' : 'odd';
+        //     let  word=document.createElement('p');
+        //     word = document.body.innerText.toLowerCase();
+        //     word.body.innerText = "this  odd number is not valid this  is  even number";
+        //     word.body.style.color = "green";
+        //     word.appendChild(document.createElement('br'));
+        //     document.body.appendChild(word);
+
+        //     alert(`The number ${number} is ${result}.`);
+        // }
+
+
+
+
+
+
+
+
+
+     
+function checkEvenOdd() {
+
+    const number = document.getElementById('numberInput').value;
+
+    if (number === "" || isNaN(number)) {
+
+        let word = document.createElement("p");
+
+        word.innerText = "Please enter a valid number.";
+
+        word.style.color = "red";
+        word.style.fontSize="50px";
+
+        document.body.appendChild(word);
+
+        
+
+        return;
+    }
+
+  
+    const result = (number % 2 === 0) ? "even" : "odd";
+
+    let word = document.createElement("p");
+
+    if (result === "even") {
+        word.innerText = "This is an even number.";
+        word.style.color = "green";
+         word.style.fontSize="50px";
+
+    } else {
+        word.innerText = "This is an odd number.";
+        word.style.color = "red";
+         word.style.fontSize="50px";
+
+    }
+
+    document.body.appendChild(word);
+
+   
+}
+
+
+        </script>
+</body>
+</html>
